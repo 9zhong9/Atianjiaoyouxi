@@ -1,1 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>宿舍日记：脚边的信任</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">TEXT ADVENTURE · OFFLINE</p>
+        <h1>宿舍日记：脚边的信任</h1>
+        <p>通过文字与选择推进故事，建立信任，尊重每个人的边界。</p>
+      </div>
+      <button id="restart" class="outline" type="button">重新开始</button>
+    </header>
 
+    <section class="notice"><b>互动规则</b><span>所有角色均为 20 岁成年人。任何亲密互动都必须得到清醒、明确、持续且可撤回的同意；你可以随时暂停或结束游戏。</span></section>
+
+    <div class="columns">
+      <aside class="panel characters">
+        <h2>室友关系</h2>
+        <div id="relationship-list"></div>
+      </aside>
+
+      <section class="panel story-panel">
+        <div class="story-top"><span id="chapter">第一天 · 傍晚</span><span id="turn">第 1 回合</span></div>
+        <div id="story" class="story" aria-live="polite"></div>
+        <div id="choices" class="choices"></div>
+        <div class="story-actions"><button id="pause" class="outline" type="button">暂停游戏</button><button id="save" class="outline" type="button">保存进度</button></div>
+      </section>
+
+      <aside class="panel info">
+        <h2>玩家状态</h2>
+        <div id="player-status"></div>
+        <div class="help"><b>玩法</b><p>每回合选择一个行动。不同选择会影响室友的好感、信任和故事走向。</p></div>
+      </aside>
+    </div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
